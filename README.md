@@ -35,24 +35,20 @@ Before running this project, ensure you have:
 git clone https://github.com/maryAnnab/LangGraph-Agent.git
 cd LangGraph-Agent
 
-text
 
 ### 2. Create and activate virtual environment
 python3 -m venv venv
 source venv/bin/activate # On Ubuntu/Linux
 
-text
 
 ### 3. Install dependencies
 pip install -U langgraph langchain python-dotenv
 
-text
 
 ### 4. Configure environment variables
 Create a `.env` file in the project root:
 echo "ANTHROPIC_API_KEY=your_api_key_here" > .env
 
-text
 
 ## Usage
 
@@ -60,7 +56,6 @@ text
 
 python main.py
 
-text
 
 ### Basic Example
 
@@ -78,7 +73,6 @@ response = agent.invoke({
 "messages": [{"role": "user", "content": "Your query here"}]
 })
 
-text
 
 ## Project Structure
 
@@ -89,7 +83,6 @@ LangGraph-Agent/
 ├── .env # Environment variables (not tracked)
 └── README.md # Project documentation
 
-text
 
 ## Development
 
@@ -105,7 +98,6 @@ text
 For API deployment:
 uvicorn app:app --reload --host 0.0.0.0 --port 8000
 
-text
 
 ## Contributing
 
