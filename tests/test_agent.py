@@ -2,7 +2,7 @@ import pytest
 from unittest.mock import Mock, patch
 from langchain_core.language_models.fake import FakeListLLM
 from langchain_core.messages import AIMessage
-from agent import create_graph, process_message, State
+from langgraph_agent.agent import create_graph, process_message, State
 
 def test_create_graph_structure():
     """Test czy graf się kompiluje poprawnie"""
